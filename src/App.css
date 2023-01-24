@@ -1,0 +1,57 @@
+.count{
+  border: none;
+  border-radius: 50%;
+ 
+}
+.checked {
+  color: orange;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 5%;
+}
+
+
+@media screen and (max-width:800px) {
+  .grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  .customies-section{
+    width: fit-content;
+  }
+  .card-margin{
+    margin-top: 5%;
+  }
+}
+@media screen and (min-width:801px) and (max-width:1025px) {
+  .grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+}
+
+/* @media screen and (min-width:1444px) and (max-width:2160px){
+  .nav{
+    
+  }
+ .customies-section{
+  width:100%;
+  padding: 4%;
+  margin: 2%;
+  height: 80vh;
+ }
+  .grid{
+    gap: 10%;
+    
+  }
+  .card-margin{
+    width: 30rem !important;
+  }
+} */
